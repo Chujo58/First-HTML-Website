@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chloe's Portfolio</title>
+        <link href="css/main.css", rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script defer="defer" src="test.js"></script>
+    <body>
+        <div style="background-color: rgb(0, 0, 0); margin-block-end:auto; text-align: center;">
+            <h1 style="color: white;">
+                Chloe's Portfolio
+            </h1>
+        </div>
+        <div style="background-color: #4d566870; vertical-align: middle;">
+            <!-- <hr> -->
+            <ul class="navbar">
+                <li><a href="#home">
+                    <div class="btn from-left">Home</div>
+                </a></li>
+                
+                <li><a href="#projects" onclick="scroll_function('coding-project-header')">
+                    <div class="btn from-center">Coding</div>
+                </a></li>
+                <li><a href="#photo" onclick="scroll_function('photography-header');">
+                    <div class="btn from-right">Photography</div>
+                </a></li>
+            </ul>
+            <!-- <hr> -->
+        </div>
+        <h2 id="coding-project-header">
+            Coding Projects
+        </h2>
+        <div class="general-container">
+            <div style="width: 10px; float: left;"></div>
+            <div class="inner-container">
+                <h3 style="width: 600px;">
+                    ReadROOT Python Package
+                </h3>
+                <img src="images/compass_tab_gui.png" class="rounded-image" style="margin-bottom: 15px;" onclick="togglev2(this);">
+                <div class="toggle-text" style="display: none;">
+                    <hr class="small">
+                    This project was made for the physics department of McGill university over the summer 2023. This Python package was sorely made to complement the <a href="https://www.caen.it/products/compass/">CoMPASS software</a> made by CAEN. This package contains a GUI which allows you to reload the CoMPASS saved files and graph again all of the histograms available in the CoMPASS software. 
+                    <br><br>
+                    More about the package and its different functionalities can be learned in the Wiki of the Github repository.
+                </div>
+                <a href="https://github.com/Chujo58/ReadROOT" style="text-decoration: none; display: none;">
+                    <div class="btn from-left">Repository</div>
+                </a>
+            </div>
+            <div style="width: 10px; float: left;"></div>
+            <div class="inner-container">
+                <h3 style="width: 600px;">
+                    Honkai Impact 3rd Database Bot
+                </h3>
+                <img src="images/hi3_bot.png" class="rounded-image" style="margin-bottom: 15px;" onclick="togglev2(this);">
+                <div class="toggle-text" style="display: none;">
+                    <hr class="small">
+                    This project has been ongoing since October 2022. This project includes html parsing of the <a href="https://honkaiimpact3.fandom.com/wiki/Stigmata">Stigmata</a> Wiki for Honkai Impact 3rd. The result of the html parsing makes up the database of the bot, saved in memory, meaning that the database can be reparsed at anytime if updates are to be made. This bot has since August 2023 been online without many issues and its status can be tracked over on <a href="https://stats.uptimerobot.com/nAJkwilXpR">Uptime Robot</a>.
+                </div>
+                <a href="https://github.com/Chujo58/Honkai-Discord-Bot" style="text-decoration: none; display: none;">
+                    <div class="btn from-center">Repository</div>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <h2 id="photography-header">
+            Photography
+        </h2>
+        <div class="toggle-text" style="margin: 11px;">
+            During my Fall 2021 semester, I took a photography class. Some of the pictures seen in the gallery bellow were taken during that class with a <a href="https://en.nikon.ca/nikon-products/product-archive/dslr-cameras/d70s.html">D70s</a> Nikon camera body. Over the semester, different projects took place for us to learn more about photography and to also apply the skills we had learned in class about Photoshop. 
+        </div>
+        <div class="toggle-text" style="margin: 11px;">
+            Since then, I have taken some more pictures of the night sky and also of my cat, since she likes to be taken in picture very much, with my new <a href="https://en.nikon.ca/nikon-products/product/mirrorless-cameras/z-5.html">Z5</a> Nikon camera body. Some of the pictures below were taken with an old F50 Nikon film camera.
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery column">
+                <a class="gallery link" target="_blank">
+                    <div class="gallery thumbnail">
+                        <img src="images/photos/DSC_4698 - Version Web.jpg" class="gallery image">
+                        <div class="gallery caption">Tree picture for a photography class project</div>
+                    </div>
+                </a>
+                <a class="gallery link" target="_blank">
+                    <div class="gallery thumbnail">
+                        <img src="images/photos/Dancing in the cold_Àniveau - Version Web.jpg" class="gallery image">
+                        <div class="gallery caption">Long exposure picture</div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery column">
+                <a class="gallery link" target="_blank">
+                    <div class="gallery thumbnail">
+                        <img src="images/photos/DSC_0198_Web.png" class="gallery image">
+                        <div class="gallery caption">Cat portrait taken with the Z5 body</div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery column">
+                <a class="gallery link" target="_blank">
+                    <div class="gallery thumbnail">
+                        <img src="images/photos/DSC_4741 - Version Web.jpg" class="gallery image">
+                        
+                    </div>
+                </a>
+                <a class="gallery link" target="_blank">
+                    <div class="gallery thumbnail">
+                        <img src="images/photos/halo-plan_moyen - Version Web.jpg" class="gallery image">
+                        <div class="gallery caption">Cat portrait with nice lens effect</div>
+                    </div>
+                </a>
+                <a class="gallery link" target="_blank">
+                    <div class="gallery thumbnail">
+                        <img src="images/photos/Lune_CP 211119 (6) - Version Web.jpg" class="gallery image">
+                        <div class="gallery caption">Moon picture taken with a 300mm lens at f/11.</div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery column">
+                <a class="gallery link" target="_blank">
+                    <div class="gallery thumbnail">
+                        <img src="images/photos/DSC_4850 - Version Web.jpg" class="gallery image">
+                    </div>
+                </a>
+                <a class="gallery link" target="_blank">
+                    <div class="gallery thumbnail">
+                        <img src="images/photos/000066800022-light-web.png" class="gallery image">
+                        <div class="gallery caption">Cat portrait taken with the F50 Nikon body</div>
+                    </div>
+                </a>
+            </div>
+        </div>                
+    </body>
+</html>
